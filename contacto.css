@@ -1,0 +1,174 @@
+@import url(general.css);
+
+ body{
+    background-color: rgb(7, 7, 94);
+}
+.contacto{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+
+}
+.titulo h1{
+    color: white
+}
+.form{
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+}
+
+.map{
+    grid-area: map;
+}
+
+.contact{
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 35px ;
+}
+ .card{
+    position:relative;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: "form info" "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+} 
+
+.contact h3{
+    color: rgb(4, 19, 91);
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.form-box{
+    position: relative;
+    width: 100%;
+}
+.form-box .row50{
+    display: flex;
+    gap: 20px;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.form-box .row100 .inputBox{
+    width: 100%;
+}
+
+.inputBox span{
+    color: rgb(4, 4, 66);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.inputBox input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid rgb(9, 186, 35);
+}
+ textarea{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid rgb(9, 186, 35) ;
+    resize: none;
+    min-height: 40px;
+    margin-bottom: -10px;
+    height: 40px;
+    margin-top: 10px;
+}
+label{
+    color: rgb(4, 4, 66);
+    font-weight: 700;
+}
+.btnc{
+    background-color: rgb(26, 165, 14);
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    max-height: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+    color: white;
+
+}
+.btnc:hover{
+    background-color: #0c055c;
+}
+.inputBox ::placeholder{
+    color: #999;
+}
+   
+.info{
+    background-color: #0c055c;
+}
+.info h3{
+    color: white;
+}
+ .info .infoBox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+ }
+
+ .info .infoBox div span{
+    min-width: 40px;
+    height: 40px;
+    color: white;
+    background-color: rgb(51, 227, 42);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+ }
+ .info .infoBox div p{
+    color:white;
+    font-size: 1.1em;
+ }
+ .info .infoBox div a{
+    color: white;
+    text-decoration: none;
+ }
+ .socialMedia{
+    margin-top: 40px;
+    display: flex;
+ }
+
+ .socialMedia li{
+    list-style: none;
+    margin-right: 15px;
+ }
+ .socialMedia li a {
+    color: white;
+    font-size: 2em;
+    color: #ccc;
+ }
+ .socialMedia li a:hover{
+    color: #fff;
+ }
+ .map
+ {padding: 0;}
+ .map iframe{
+    width: 100%;
+    height: 100%;
+ } 
+ /* responsive design */
